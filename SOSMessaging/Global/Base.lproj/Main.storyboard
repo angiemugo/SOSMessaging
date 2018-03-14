@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pcD-Wu-VX8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location Manager View Controller-->
+        <scene sceneID="r0g-cF-5LN">
+            <objects>
+                <viewController storyboardIdentifier="LocationManagerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pcD-Wu-VX8" customClass="LocationManagerViewController" customModule="SOSMessaging" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sfw-yR-Myj" customClass="GMSMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHk-yd-iNJ" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yzj-YO-TiW" firstAttribute="trailing" secondItem="mHk-yd-iNJ" secondAttribute="trailing" id="8KB-ab-A4D"/>
+                            <constraint firstItem="mHk-yd-iNJ" firstAttribute="leading" secondItem="Yzj-YO-TiW" secondAttribute="leading" id="GuQ-M5-Kls"/>
+                            <constraint firstItem="Yzj-YO-TiW" firstAttribute="bottom" secondItem="mHk-yd-iNJ" secondAttribute="bottom" id="caM-p6-vqq"/>
+                            <constraint firstItem="mHk-yd-iNJ" firstAttribute="top" secondItem="sfw-yR-Myj" secondAttribute="top" id="z83-VP-RHu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yzj-YO-TiW"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="sfw-yR-Myj" id="5K7-Hl-f4l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHv-KS-sZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="25"/>
+        </scene>
+    </scenes>
+</document>

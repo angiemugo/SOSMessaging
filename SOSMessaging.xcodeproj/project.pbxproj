@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8554F9911F2BAF12DFCC73BA /* libPods-SOSMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B03B2575C887DD60F26EA0 /* libPods-SOSMessaging.a */; };
+		FD58CC98206BE30E0092F75D /* LocationManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD58CC97206BE30E0092F75D /* LocationManagerViewController.swift */; };
 		FD896003205908A60056158B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD896002205908A60056158B /* AppDelegate.swift */; };
-		FD896005205908A60056158B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD896004205908A60056158B /* ViewController.swift */; };
 		FD896008205908A60056158B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD896006205908A60056158B /* Main.storyboard */; };
 		FD89600A205908A60056158B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD896009205908A60056158B /* Assets.xcassets */; };
-		FD89600D205908A60056158B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD89600B205908A60056158B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D8B6439BB1AB1B6A6EB5BD0 /* Pods-SOSMessaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSMessaging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOSMessaging/Pods-SOSMessaging.debug.xcconfig"; sourceTree = "<group>"; };
+		A9E5842DFE8C452881E3D3CC /* Pods-SOSMessaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSMessaging.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOSMessaging/Pods-SOSMessaging.release.xcconfig"; sourceTree = "<group>"; };
+		B9B03B2575C887DD60F26EA0 /* libPods-SOSMessaging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SOSMessaging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD58CC97206BE30E0092F75D /* LocationManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerViewController.swift; sourceTree = "<group>"; };
 		FD895FFF205908A60056158B /* SOSMessaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOSMessaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD896002205908A60056158B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD896004205908A60056158B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD896007205908A60056158B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD896009205908A60056158B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD89600C205908A60056158B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD89600E205908A60056158B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -29,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8554F9911F2BAF12DFCC73BA /* libPods-SOSMessaging.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		395142629D7BFE96A6D3283F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9B03B2575C887DD60F26EA0 /* libPods-SOSMessaging.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA569731F86EAAF47818C18D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D8B6439BB1AB1B6A6EB5BD0 /* Pods-SOSMessaging.debug.xcconfig */,
+				A9E5842DFE8C452881E3D3CC /* Pods-SOSMessaging.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FD895FF6205908A60056158B = {
 			isa = PBXGroup;
 			children = (
 				FD896001205908A60056158B /* SOSMessaging */,
 				FD896000205908A60056158B /* Products */,
+				FA569731F86EAAF47818C18D /* Pods */,
+				395142629D7BFE96A6D3283F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +76,29 @@
 		FD896001205908A60056158B /* SOSMessaging */ = {
 			isa = PBXGroup;
 			children = (
-				FD896002205908A60056158B /* AppDelegate.swift */,
-				FD896004205908A60056158B /* ViewController.swift */,
-				FD896006205908A60056158B /* Main.storyboard */,
+				FD896016205908DD0056158B /* Global */,
+				FD896015205908C80056158B /* Maps */,
 				FD896009205908A60056158B /* Assets.xcassets */,
-				FD89600B205908A60056158B /* LaunchScreen.storyboard */,
 				FD89600E205908A60056158B /* Info.plist */,
 			);
 			path = SOSMessaging;
+			sourceTree = "<group>";
+		};
+		FD896015205908C80056158B /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				FD58CC97206BE30E0092F75D /* LocationManagerViewController.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		FD896016205908DD0056158B /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				FD896006205908A60056158B /* Main.storyboard */,
+				FD896002205908A60056158B /* AppDelegate.swift */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD896011205908A60056158B /* Build configuration list for PBXNativeTarget "SOSMessaging" */;
 			buildPhases = (
+				C387ABDC64618248561CA4DC /* [CP] Check Pods Manifest.lock */,
 				FD895FFB205908A60056158B /* Sources */,
 				FD895FFC205908A60056158B /* Frameworks */,
 				FD895FFD205908A60056158B /* Resources */,
+				E5DAB376C5E212ADD95063ED /* [CP] Embed Pods Frameworks */,
+				70522FB19E98391FA23756FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,7 +163,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD89600D205908A60056158B /* LaunchScreen.storyboard in Resources */,
 				FD89600A205908A60056158B /* Assets.xcassets in Resources */,
 				FD896008205908A60056158B /* Main.storyboard in Resources */,
 			);
@@ -131,13 +170,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		70522FB19E98391FA23756FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SOSMessaging/Pods-SOSMessaging-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SOSMessaging/Pods-SOSMessaging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C387ABDC64618248561CA4DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SOSMessaging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5DAB376C5E212ADD95063ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SOSMessaging/Pods-SOSMessaging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD895FFB205908A60056158B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD896005205908A60056158B /* ViewController.swift in Sources */,
 				FD896003205908A60056158B /* AppDelegate.swift in Sources */,
+				FD58CC98206BE30E0092F75D /* LocationManagerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,14 +243,6 @@
 				FD896007205908A60056158B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FD89600B205908A60056158B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD89600C205908A60056158B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,6 +357,7 @@
 		};
 		FD896012205908A60056158B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D8B6439BB1AB1B6A6EB5BD0 /* Pods-SOSMessaging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +372,7 @@
 		};
 		FD896013205908A60056158B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E5842DFE8C452881E3D3CC /* Pods-SOSMessaging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
