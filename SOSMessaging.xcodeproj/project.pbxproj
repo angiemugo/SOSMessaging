@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8554F9911F2BAF12DFCC73BA /* libPods-SOSMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B03B2575C887DD60F26EA0 /* libPods-SOSMessaging.a */; };
+		1B3D7F2F37655EA14BC6F321 /* Pods_SOSMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB770302C77DFDB2F652D82 /* Pods_SOSMessaging.framework */; };
 		FD58CC98206BE30E0092F75D /* LocationManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD58CC97206BE30E0092F75D /* LocationManagerViewController.swift */; };
 		FD896003205908A60056158B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD896002205908A60056158B /* AppDelegate.swift */; };
 		FD896008205908A60056158B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD896006205908A60056158B /* Main.storyboard */; };
 		FD89600A205908A60056158B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD896009205908A60056158B /* Assets.xcassets */; };
+		FDA5B83F2084D71800126DC5 /* SMSEngineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA5B83E2084D71800126DC5 /* SMSEngineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D8B6439BB1AB1B6A6EB5BD0 /* Pods-SOSMessaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSMessaging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOSMessaging/Pods-SOSMessaging.debug.xcconfig"; sourceTree = "<group>"; };
 		A9E5842DFE8C452881E3D3CC /* Pods-SOSMessaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOSMessaging.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOSMessaging/Pods-SOSMessaging.release.xcconfig"; sourceTree = "<group>"; };
-		B9B03B2575C887DD60F26EA0 /* libPods-SOSMessaging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SOSMessaging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB770302C77DFDB2F652D82 /* Pods_SOSMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOSMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD58CC97206BE30E0092F75D /* LocationManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerViewController.swift; sourceTree = "<group>"; };
 		FD895FFF205908A60056158B /* SOSMessaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOSMessaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD896002205908A60056158B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD896007205908A60056158B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD896009205908A60056158B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD89600E205908A60056158B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA5B83E2084D71800126DC5 /* SMSEngineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSEngineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8554F9911F2BAF12DFCC73BA /* libPods-SOSMessaging.a in Frameworks */,
+				1B3D7F2F37655EA14BC6F321 /* Pods_SOSMessaging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +43,7 @@
 		395142629D7BFE96A6D3283F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9B03B2575C887DD60F26EA0 /* libPods-SOSMessaging.a */,
+				EAB770302C77DFDB2F652D82 /* Pods_SOSMessaging.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,29 +78,14 @@
 		FD896001205908A60056158B /* SOSMessaging */ = {
 			isa = PBXGroup;
 			children = (
-				FD896016205908DD0056158B /* Global */,
-				FD896015205908C80056158B /* Maps */,
+				FDA5B83E2084D71800126DC5 /* SMSEngineViewController.swift */,
+				FD896006205908A60056158B /* Main.storyboard */,
+				FD896002205908A60056158B /* AppDelegate.swift */,
+				FD58CC97206BE30E0092F75D /* LocationManagerViewController.swift */,
 				FD896009205908A60056158B /* Assets.xcassets */,
 				FD89600E205908A60056158B /* Info.plist */,
 			);
 			path = SOSMessaging;
-			sourceTree = "<group>";
-		};
-		FD896015205908C80056158B /* Maps */ = {
-			isa = PBXGroup;
-			children = (
-				FD58CC97206BE30E0092F75D /* LocationManagerViewController.swift */,
-			);
-			path = Maps;
-			sourceTree = "<group>";
-		};
-		FD896016205908DD0056158B /* Global */ = {
-			isa = PBXGroup;
-			children = (
-				FD896006205908A60056158B /* Main.storyboard */,
-				FD896002205908A60056158B /* AppDelegate.swift */,
-			);
-			path = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +200,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SOSMessaging/Pods-SOSMessaging-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -229,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA5B83F2084D71800126DC5 /* SMSEngineViewController.swift in Sources */,
 				FD896003205908A60056158B /* AppDelegate.swift in Sources */,
 				FD58CC98206BE30E0092F75D /* LocationManagerViewController.swift in Sources */,
 			);
