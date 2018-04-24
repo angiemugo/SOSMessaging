@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		D34E7CB123580798B7A0B8CA /* libPods-SOSMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6FA0A4A4D9114237509E0F /* libPods-SOSMessaging.a */; };
 		FD58CC98206BE30E0092F75D /* LocationManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD58CC97206BE30E0092F75D /* LocationManagerViewController.swift */; };
-		FD896003205908A60056158B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD896002205908A60056158B /* AppDelegate.swift */; };
 		FD896008205908A60056158B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD896006205908A60056158B /* Main.storyboard */; };
 		FD89600A205908A60056158B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD896009205908A60056158B /* Assets.xcassets */; };
+		FDF7D326208F9CA00045258B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7D325208F9CA00045258B /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		DE6FA0A4A4D9114237509E0F /* libPods-SOSMessaging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SOSMessaging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD58CC97206BE30E0092F75D /* LocationManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerViewController.swift; sourceTree = "<group>"; };
 		FD895FFF205908A60056158B /* SOSMessaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOSMessaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD896002205908A60056158B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD896007205908A60056158B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD896009205908A60056158B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD89600E205908A60056158B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF7D325208F9CA00045258B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Global/AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,8 @@
 		FD896001205908A60056158B /* SOSMessaging */ = {
 			isa = PBXGroup;
 			children = (
+				FDF7D325208F9CA00045258B /* AppDelegate.swift */,
 				FD896006205908A60056158B /* Main.storyboard */,
-				FD896002205908A60056158B /* AppDelegate.swift */,
 				FD58CC97206BE30E0092F75D /* LocationManagerViewController.swift */,
 				FD896009205908A60056158B /* Assets.xcassets */,
 				FD89600E205908A60056158B /* Info.plist */,
@@ -214,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD896003205908A60056158B /* AppDelegate.swift in Sources */,
+				FDF7D326208F9CA00045258B /* AppDelegate.swift in Sources */,
 				FD58CC98206BE30E0092F75D /* LocationManagerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
